@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>极客 Todos</title>
+    <link href="todoSingle.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="todos-container">
+        <h1 class="todos-title">极客 Todo</h1>
+        <div class="todos-content">
+            <div class="todos-input-cell">
+                <input type="text" class="todo-input" id="todo-input" name="todo" placeholder="需要做什么呢？">
+            </div>
+            <div class="todos-list" id="todos-list">
+                <div class="todo-item">
+                    <span class="todo-item-hd"></span>
+                    <span class="todo-item-bd">跑步</span>
+                    <span class="todo-item-ft">X</span>
+                </div>
+                <div class="todo-item">
+                    <span class="todo-item-hd"></span>
+                    <span class="todo-item-bd">游泳</span>
+                    <span class="todo-item-ft">X</span>
+                </div>
+                <div class="todo-item active">
+                    <span class="todo-item-hd"></span>
+                    <span class="todo-item-bd">背单词</span>
+                    <span class="todo-item-ft">X</span>
+                </div>
+            </div>
+            <div class="todos-foot" id="todos-foot">
+                <span><span class="todo-count"></span> 待办</span>
+                <div class="filters">
+                    <span class="filter-item active" id="0">全部</span>
+                    <span class="filter-item" id="1">进行中<span id="todocount"></span></span>
+                    <span class="filter-item" id="2">已完成<span id="donecount"></span></span>
+                </div>
+                <span class="remove-completed">删除已完成</span>
+            </div>
+            <span class="todos-bottom"></span>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+<script src="jquery-3.5.1.js"></script>
+<script src="todoSingle.js"></script>
+</body>
+
+</html>
